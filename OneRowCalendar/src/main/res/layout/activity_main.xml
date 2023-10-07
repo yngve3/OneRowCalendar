@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Четверг, 18 июля "/>
+
+    <TextView
+        android:id="@+id/tvWeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Неделя №1"/>
+
+    <com.example.onerowcalendar.one_row_calendar.OneRowCalendar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_selected="@layout/item_calendar_selected"
+        app:layout_unselected="@layout/item_calendar_unselected"
+        android:id="@+id/one_row_calendar"/>
+
+</LinearLayout>
